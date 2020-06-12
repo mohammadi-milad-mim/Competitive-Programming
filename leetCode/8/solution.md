@@ -1,6 +1,6 @@
 [**leetCode Problem 8**](https://leetcode.com/problems/string-to-integer-atoi)      
-[**_link to the video explanation of this soultion that I have created_**]()    
-[**_link to the Google Slide explanation of this soultion that I have created_**](https://docs.google.com/presentation/d/1kyYtErGdT3iP6cXjT-lLyfoH1Z_vNaKGTrWCeva_qKs/edit?usp=sharing)
+[**_link to the video explanation of this solution that I have created_**]()    
+[**_link to the Google Slide explanation of this solution that I have created_**](https://docs.google.com/presentation/d/1kyYtErGdT3iP6cXjT-lLyfoH1Z_vNaKGTrWCeva_qKs/edit?usp=sharing)
 # 8. String to Integer (atoi)
 
 ## Problem

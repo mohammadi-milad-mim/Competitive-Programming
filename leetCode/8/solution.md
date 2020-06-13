@@ -45,7 +45,7 @@ If no valid conversion could be performed, a zero value is returned.
 **Explanation**: The number "-91283472332" is out of the range of a 32-bit signed integer. Thefore INT_MIN (−231) is returned.
 
 ## Solution:
-** Please check the video solution that I have mentioned at the top.**
+**Please check the video solution that I have mentioned at the top.**
 ### Approch One:
 
 We will start iterating through the str from the beginning. We will skip whit spaces until reaching the first digit or sign. Then if the first non-whitespace character were a sign, we would store it.  

@@ -1,0 +1,10 @@
+name: Island Tour
+author: Jeroen Bransen
+license: cc by-sa
+source: Northwestern Europe Regional Contest (NWERC) 2020
+source_url: http://2020.nwerc.eu
+
+validation: custom
+limits:
+  time_multiplier: 1.5
+  time_safety_margin: 1.2

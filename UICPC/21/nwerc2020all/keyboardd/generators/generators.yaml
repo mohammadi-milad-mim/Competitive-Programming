@@ -1,0 +1,33 @@
+solution: /submissions/accepted/jeroen.java
+
+data:
+  sample:
+    type: directory
+    solution:
+    data:
+      '1':
+      '2':
+
+  secret:
+    type: directory
+    data:
+      - random: generate.py {name}.in {seed:1}
+      - random: generate.py {name}.in {seed:2}
+      - random: generate.py {name}.in {seed:3}
+      - random: generate.py {name}.in {seed:4}
+      - random: generate.py {name}.in {seed:5}
+      - random: generate.py {name}.in {seed:6}
+      - random: generate.py {name}.in {seed:7}
+      - random: generate.py {name}.in {seed:8}
+      - random: generate.py {name}.in {seed:9}
+      - random: generate.py {name}.in {seed:10}
+      - minimal: manual/min-1.in
+      - minimal: manual/min-2.in
+      - minimal: manual/min-3.in
+      - misleading-duplicates: manual/misleading-duplicates-3.in
+      - misleading-duplicates: manual/misleading-duplicates-4.in
+      - misleading-duplicates: manual/misleading-duplicates-5.in
+      - long: manual/long-1.in
+      - long: manual/long-2.in
+      - space: manual/double-space-1.in
+      - space: manual/double-space-2.in

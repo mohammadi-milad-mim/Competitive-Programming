@@ -1,0 +1,80 @@
+solution: /submissions/accepted/timon.cpp
+
+generators:
+  random_gen:
+    - generators/random_generator.cpp
+    - icpc_gen_helper.h
+
+  circle_gen:
+    - generators/circle.cpp
+    - icpc_gen_helper.h
+
+  fully_connected_gen:
+    - generators/fully_connected.cpp
+    - icpc_gen_helper.h
+
+  multilayer_circle_gen:
+    - generators/multilayer_circle.cpp
+    - icpc_gen_helper.h
+
+  sibling_tree_gen:
+    - generators/sibling_tree.cpp
+    - icpc_gen_helper.h
+
+  increasing_star_gen:
+    - generators/increasing_star.cpp
+    - icpc_gen_helper.h
+
+  islands_gen:
+    - generators/islands.cpp
+    - icpc_gen_helper.h
+
+data:
+  sample:
+    type: directory
+    solution:
+    data:
+      '1':
+      '2':
+      '3':
+
+  secret:
+    type: directory
+    data:
+      - single_hall : manual_cases/single_hall.in
+      - manual_complex_star: manual_cases/complex_star_01.in
+      - manual_complex_star: manual_cases/complex_star_02.in
+      - sibling_tree_small : sibling_tree_gen --max_n 100 --max_k 200000 --seed {seed:715356}
+      - random_small: random_gen --max_n 1000 --max_k 3000 --seed {seed:1}
+      - random_small: random_gen --max_n 1000 --max_k 4000 --seed {seed:42}
+      - random_small: random_gen --max_n 1000 --max_k 6000 --seed {seed:1337}
+      - random_small: random_gen --max_n 1000 --max_k 8000 --seed {seed:42}
+      - random_small: random_gen --max_n 1000 --max_k 10000 --seed {seed:1}
+      - circle_max : circle_gen --max_n 200000 --seed {seed:43}
+      - fully_connected_max: fully_connected_gen --max_n 200000 --max_k 200000 --seed {seed:2020}
+      - sibling_tree_max : sibling_tree_gen --max_n 200000 --max_k 200000 --seed {seed:11833}
+      - multilayer_circle_sparse : multilayer_circle_gen --max_n 200000 --max_k 200000 --max_conn 50 --max_layer 200 --seed {seed:42}
+      - multilayer_circle_sparse : multilayer_circle_gen --max_n 200000 --max_k 200000 --max_conn 30 --max_layer 300 --seed {seed:43}
+      - multilayer_circle_dense : multilayer_circle_gen --max_n 200000 --max_k 200000 --max_conn 5000 --max_layer 150 --seed {seed:44}
+      - multilayer_circle_dense : multilayer_circle_gen --max_n 200000 --max_k 200000 --max_conn 4000 --max_layer 200 --seed {seed:45}
+      - multilayer_circle_sparse_torus : multilayer_circle_gen --max_n 200000 --max_k 200000 --max_conn 50 --max_layer 200 --seed {seed:46} --torus
+      - multilayer_circle_sparse_torus : multilayer_circle_gen --max_n 200000 --max_k 200000 --max_conn 30 --max_layer 300 --seed {seed:47} --torus
+      - multilayer_circle_dense_torus : multilayer_circle_gen --max_n 200000 --max_k 200000 --max_conn 5000 --max_layer 150 --seed {seed:48} --torus
+      - multilayer_circle_dense_torus : multilayer_circle_gen --max_n 200000 --max_k 200000 --max_conn 4000 --max_layer 200 --seed {seed:49} --torus
+      - random_big: random_gen --max_n 200000 --max_k 200000 --seed {seed:2}
+      - random_big: random_gen --max_n 10000 --max_k 200000 --seed {seed:3}
+      - random_big: random_gen --max_n 192868 --max_k 191283 --seed {seed:4}
+      - random_big: random_gen --max_n 10000 --max_k 200000 --seed {seed:5}
+      - random_big: random_gen --max_n 5000 --max_k 200000 --seed {seed:6}
+      - path_increasing: path.py 200000 increasing {seed}
+      - path_decreasing: path.py 200000 decreasing {seed}
+      - path_shuffled: path.py 200000 shuffled {seed}
+      - increasing_star_small: increasing_star_gen --max_n 10000 --seed {seed}
+      - increasing_star_big: increasing_star_gen --max_n 200000 --seed {seed}
+      - islands_small: islands_gen --max_n 1000 --max_k 5000 --max_size 14 --seed {seed}
+      - islands_small: islands_gen --max_n 1001 --max_k 5000 --max_size 30 --seed {seed}
+      - islands_small: islands_gen --max_n 1500 --max_k 6000 --max_size 150 --seed {seed}
+      - islands_big: islands_gen --max_n 10003 --max_k 100000 --max_size 30 --seed {seed}
+      - islands_big: islands_gen --max_n 10000 --max_k 200000 --max_size 20 --seed {seed}
+      - islands_big: islands_gen --max_n 10001 --max_k 200000 --max_size 100 --seed {seed}
+

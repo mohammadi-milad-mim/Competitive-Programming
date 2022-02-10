@@ -1,0 +1,2 @@
+REGEX("[a-z]([a-z ]{0,998}[a-z])?") NEWLINE
+REGEX("[a-z]([a-z ]{0,998}[a-z])?") NEWLINE

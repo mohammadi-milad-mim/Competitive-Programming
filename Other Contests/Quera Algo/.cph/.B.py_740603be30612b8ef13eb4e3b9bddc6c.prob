@@ -1,0 +1,1 @@
+{"name":"Local: B","url":"d:\\CP\\Contests\\Officials\\Quera Algo\\B.py","tests":[{"id":1640349943001,"input":"5\n3 2000 5\n2 201 1\n5 30 1\n2 100 100\n3 3 100","output":"665\n100\n-1\n-1\n-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\Contests\\Officials\\Quera Algo\\B.py","group":"local","local":true}

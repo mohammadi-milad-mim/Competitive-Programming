@@ -1,0 +1,10 @@
+INT(2, 5000, n) SPACE
+INT(n+1, 5000, r) SPACE
+INT(1, 50, m) NEWLINE
+SET(prevt=0)
+REP(m)
+   INT(prevt+1, n-1, t) SPACE
+   FLOATP(1e-9, 1-1e-9, 0, 6, p) SPACE
+   INT(1, 10^3, d) NEWLINE
+   SET(prevt=t)
+END

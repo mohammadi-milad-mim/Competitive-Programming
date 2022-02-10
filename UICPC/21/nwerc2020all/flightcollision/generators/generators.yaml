@@ -1,0 +1,48 @@
+solution: /submissions/accepted/paul.cpp
+
+visualizer: /visualizers/visualizer {name}
+data:
+  sample:
+    type: directory
+    data:
+      '1':
+      '2':
+
+  secret:
+    type: directory
+    data:
+      - single: manual/single.in
+      - early-collision: manual/early-collision.in
+      - late-collision: manual/late-collision.in
+      - intersect-past: manual/intersect-past.in
+      - tobi: manual/tobi1.in
+      - tobi: manual/tobi2.in
+      - parallel: parallel.py 98765 -48539
+      - anti-float: anti-float.py 99999 {seed:1}
+      - anti-float: anti-float.py 99999 {seed:2}
+      - anti-float: anti-float.py 99999 {seed:3}
+      - anti-float: anti-float-2.py 100000 {seed}
+      - criss-cross: criss-cross.py 99999
+      - criss-cross: criss-cross.py 100000
+      - far-apart: far-apart.py 0
+      - far-apart: far-apart.py 1
+      - far-apart: far-apart.py 2
+      - far-apart: far-apart.py 3
+      - random: random-case.py 10 10 {seed}
+      - random: random-case.py 100000 1000000000 {seed:1}
+      - random: random-case.py 100000 1000000000 {seed:2}
+      - random: random-case.py 100000 1000000000 {seed:3}
+      - random: random-case.py 100000 1000000000 {seed:4}
+
+      - randomized: random-case.py 2 10 {seed:5}
+      - randomized: random-case.py 2 100 {seed:6}
+      - randomized: random-case.py 10 1000 {seed:7}
+      - randomized: random-case.py 23 10000 {seed:8}
+      - randomized: random-case.py 223 210 {seed:9}
+      - randomized: random-case.py 1002 100202 {seed:10}
+      - randomized: random-case.py 102 51 {seed:11}
+      - randomized: random-case.py 10023 43848224 {seed:12}
+      - randomized: random-case.py 100000 50000 {seed:13}
+      - randomized: random-case.py 100000 50010 {seed:13}
+      - randomized: random-case.py 100 51 {seed:14}
+      - randomized: random-case.py 83382 133994984 {seed:15}

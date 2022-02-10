@@ -1,0 +1,40 @@
+\problemname{Hot Springs}
+\providecommand{\maxn}{}
+\renewcommand{\maxn}{10^5}
+\providecommand{\maxa}{}
+\renewcommand{\maxa}{10^5}
+
+\illustration{0.35}{hotsprings.jpg}{\href{https://unsplash.com/photos/cRiUOdL0pkI}{Blue Lagoon} by Andy Wang, Unsplash}%
+Iceland is famous for its geothermal activity, which supplies the country with much of its
+electricity and heating. It is also a source of pleasure, in the form of hot springs.
+
+Kalle is visiting one of Iceland's famous hot springs. It contains $n$ pools of water, 
+where the $i$th one has temperature $t_i$. Although staying in one of the warmer pools 
+for a long time sure is relaxing, Kalle is on a very tight schedule and just wants a quick
+dip in each of the pools. As you may know, the nicest thing about hot baths is the contrast
+between hot and cold. Therefore, to get the most out of his stay, Kalle wants to find an ordering
+of the pools so that the difference in temperature between subsequent pools is increasing.
+
+Given a sequence of pool temperatures $t_1, t_2, \dots, t_n$, rearrange them into a new sequence
+$t'_1, t'_2, \dots, t'_n$ such that for all $2 \leq i \leq n-1$ it holds that
+\[
+    |t'_{i-1} - t'_i| \leq |t'_i - t'_{i+1}|.
+\]
+
+\begin{Input}
+The input consists of:
+
+\begin{itemize}
+\item One line with an integer $n$ ($2 \le n \leq  10^5$), the number of pools.
+\item One line with $n$ integers $t_1, \ldots, t_n$ ($-\maxa \leq t_i \leq \maxa$ for each $i$), the
+    temperatures in each of the $n$ pools.
+\end{itemize}
+
+\end{Input}
+
+\begin{Output}
+Output a rearrangement of the sequence satisfying the given requirement.
+If no solution exists, output ``\texttt{impossible}''. If there are multiple
+valid solutions, you may output any one of them.
+\end{Output}
+

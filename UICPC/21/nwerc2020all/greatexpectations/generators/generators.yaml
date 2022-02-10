@@ -1,0 +1,70 @@
+solution: /submissions/accepted/jorke-precise.py
+
+data:
+  sample:
+    type: directory
+    data:
+      '1':
+      '2':
+      '3':
+      '4':
+
+  secret:
+    type: directory
+    data:
+      - minimal-answer: manual/minimal_answer.in
+      - maximal-answer: manual/maximal_answer.in
+      - minimal-input: manual/minimal_input.in
+      - maximal-input: manual/maximal_input.in
+
+      - out-of-bounds: manual/early_delay.in
+      - out-of-bounds: manual/large_relative_delay.in
+      - out-of-bounds: manual/big_gap.in
+      
+      - minimal-delay: manual/minimal_delay_1.in
+      - minimal-delay: manual/minimal_delay_2.in
+      - maximal-delay: manual/maximal_delay_1.in
+      - maximal-delay: manual/maximal_delay_2.in
+
+      - random: rand_gen.py 1000 50 0.05 {seed:3}
+      - random: rand_gen.py 1000 50 0.1 {seed:8}
+      - random: rand_gen.py 1000 50 0.15 {seed:7}
+      - random: rand_gen.py 1000 50 0.18 {seed:2}
+      - random: rand_gen.py 1000 50 0.2 {seed:6}
+      - random: rand_gen.py 1000 50 0.22 {seed:3}
+      - random: rand_gen.py 1000 50 0.22 {seed:4}
+      - random: rand_gen.py 1000 50 0.25 {seed:1}
+      - random: rand_gen.py 1000 50 0.25 {seed:4}
+      - random: rand_gen.py 1000 50 0.28 {seed:2}
+      - random: rand_gen.py 1000 50 0.28 {seed:8}
+      - random: rand_gen.py 1000 50 0.3 {seed:6}
+      
+      - always-possible: manual/big.in
+      - always-possible: always_possible.py 5000 500 50 {seed:0}
+      - always-possible: always_possible.py 5000 500 50 {seed:1}
+      - always-possible: always_possible.py 5000 500 50 {seed:2}
+      - always-possible: always_possible.py 5000 2500 50 {seed:0}
+      - always-possible: always_possible.py 5000 2500 50 {seed:1}
+      - always-possible: always_possible.py 5000 2500 50 {seed:2}
+      - always-possible: always_possible.py 5000 4500 50 {seed:0}
+      - always-possible: always_possible.py 5000 4500 50 {seed:1}
+      - always-possible: always_possible.py 5000 4500 50 {seed:2}
+
+      - maximal-n: random_from_r_n_m.py 5000 4999 50 {seed:0}
+      - maximal-n: random_from_r_n_m.py 5000 4999 50 {seed:1}
+      - maximal-n: random_from_r_n_m.py 5000 4999 50 {seed:2}
+      - large-margin: random_from_r_n_m.py 5000 51 50 {seed:0}
+      - large-margin: random_from_r_n_m.py 5000 51 50 {seed:1}
+      - large-margin: random_from_r_n_m.py 5000 51 50 {seed:2}
+      - large-margin: random_from_r_n_m.py 5000 51 50 {seed:3}
+      - large-margin: random_from_r_n_m.py 5000 51 50 {seed:4}
+      - average-margin: random_from_r_n_m.py 5000 2500 50 {seed:0}
+      - average-margin: random_from_r_n_m.py 5000 2500 50 {seed:1}
+      - average-margin: random_from_r_n_m.py 5000 2500 50 {seed:2}
+      - average-margin: random_from_r_n_m.py 5000 2500 50 {seed:3}
+      - average-margin: random_from_r_n_m.py 5000 2500 50 {seed:4}
+      - no-margin: random_from_r_n_m.py 2000 1999 50 {seed:0}
+      - no-margin: random_from_r_n_m.py 1000 999 50 {seed:0}
+      - no-margin: random_from_r_n_m.py 500 499 50 {seed:0}
+      - no-margin: random_from_r_n_m.py 100 99 50 {seed:0}
+      - no-margin: random_from_r_n_m.py 52 51 50 {seed:0}

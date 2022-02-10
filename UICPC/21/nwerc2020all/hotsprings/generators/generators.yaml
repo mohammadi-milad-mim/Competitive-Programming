@@ -1,0 +1,107 @@
+solution: /submissions/accepted/timon.cpp
+
+data:
+  secret:
+    type: directory
+    data:
+      - random: rand.py 5 2 {seed}
+      - random: rand.py 5 5 {seed}
+      - random: rand.py 5 100 {seed}
+      - random: rand.py 8 3 {seed}
+      - random: rand.py 8 7 {seed}
+      - random: rand.py 8 10 {seed}
+      - random: rand.py 8 100 {seed}
+      - random: rand.py 8 10000 {seed}
+      - random: rand.py 55 1 {seed}
+      - random: rand.py 55 8 {seed}
+      - random: rand.py 55 55 {seed}
+      - random: rand.py 55 1000 {seed}
+      - random: rand.py 555 12 {seed}
+      - random: rand.py 555 123 {seed}
+      - random: rand.py 555 555 {seed}
+      - random: rand.py 555 10000 {seed}
+      - random: rand.py 5555 2 {seed}
+      - random: rand.py 5555 18 {seed}
+      - random: rand.py 5555 80 {seed}
+      - random: rand.py 5555 1337 {seed}
+      - random: rand.py 5555 5555 {seed}
+      - random: rand.py 55555 30 {seed}
+      - random: rand.py 55555 4356 {seed}
+      - random: rand.py 55555 10000 {seed}
+      - random: rand.py 55555 55555 {seed}
+      - random: rand.py 55555 100000 {seed}
+      - random: rand.py 99999 1 {seed:1}
+      - random: rand.py 99999 2 {seed:1}
+      - random: rand.py 99999 3 {seed:1}
+      - random: rand.py 99999 8 {seed:1}
+      - random: rand.py 99999 100 {seed:1}
+      - random: rand.py 99999 1234 {seed:1}
+      - random: rand.py 99999 51234 {seed:1}
+      - random: rand.py 99999 81423 {seed:1}
+      - random: rand.py 99999 100000 {seed:1}
+      - random: rand.py 99999 100000 {seed:2}
+      - random: rand.py 99999 100000 {seed:3}
+      - random: rand.py 99999 100000 {seed:4}
+      - random: rand.py 99999 100000 {seed:5}
+      - random: rand.py 99999 100000 {seed:6}
+      - random: rand.py 99999 100000 {seed:7}
+      - random: rand.py 99999 100000 {seed:8}
+      - random: rand.py 99999 100000 {seed:9}
+      - random: rand.py 100000 1 {seed:1}
+      - random: rand.py 100000 2 {seed:1}
+      - random: rand.py 100000 3 {seed:1}
+      - random: rand.py 100000 8 {seed:1}
+      - random: rand.py 100000 100 {seed:1}
+      - random: rand.py 100000 1234 {seed:1}
+      - random: rand.py 100000 51234 {seed:1}
+      - random: rand.py 100000 81423 {seed:1}
+      - random: rand.py 100000 100000 {seed:1}
+      - random: rand.py 100000 100000 {seed:2}
+      - random: rand.py 100000 100000 {seed:3}
+      - random: rand.py 100000 100000 {seed:4}
+      - random: rand.py 100000 100000 {seed:5}
+      - random: rand.py 100000 100000 {seed:6}
+      - random: rand.py 100000 100000 {seed:7}
+      - random: rand.py 100000 100000 {seed:8}
+      - random: rand.py 100000 100000 {seed:9}
+      - identical: rand.py 2 0 {seed}
+      - identical: rand.py 100000 0 {seed}
+      - similar: rand.py 100000 1 {seed}
+      - similar: rand.py 100000 2 {seed}
+      - small: rand.py 2 100000 {seed}
+      - small: rand.py 3 100000 {seed}
+      - small: rand.py 4 100000 {seed}
+      - twosizes: twosizes.py 7 3 {seed}
+      - twosizes: twosizes.py 7 4 {seed}
+      - twosizes: twosizes.py 7 5 {seed}
+      - twosizes: twosizes.py 7 6 {seed}
+      - twosizes: twosizes.py 7 7 {seed}
+      - twosizes: twosizes.py 1337 3 {seed}
+      - twosizes: twosizes.py 1337 10 {seed}
+      - twosizes: twosizes.py 1337 123 {seed}
+      - twosizes: twosizes.py 1337 543 {seed}
+      - twosizes: twosizes.py 1337 867 {seed}
+      - twosizes: twosizes.py 42424 3 {seed}
+      - twosizes: twosizes.py 42424 10 {seed}
+      - twosizes: twosizes.py 42424 25 {seed}
+      - twosizes: twosizes.py 42424 4123 {seed}
+      - twosizes: twosizes.py 42424 39999 {seed}
+      - twosizes: twosizes.py 100000 3 {seed}
+      - twosizes: twosizes.py 100000 10 {seed}
+      - twosizes: twosizes.py 100000 50000 {seed}
+      - twosizes: twosizes.py 100000 99990 {seed}
+      - twosizes: twosizes.py 100000 99999 {seed}
+
+      - random: manual/random-1.in
+      - random: manual/random-2.in
+      - random: manual/random-3.in
+      - random: manual/random-4.in
+      - random: manual/random-5.in
+      - random: manual/random-6.in
+      - identical: manual/identical-1.in
+      - identical: manual/identical-2.in
+
+      - linear: linear.py 100000 100000 0
+      - linear_rev: linear.py 100000 100000 1
+      - quadratic: quadratic.py 632 100000 0
+      - quadratic_rev: quadratic.py 632 100000 1

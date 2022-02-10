@@ -1,0 +1,87 @@
+solution: /submissions/accepted/bjarki.cpp
+
+data:
+  sample:
+    type: directory
+    data:
+      '1':
+      '2':
+      '3':
+
+  secret:
+    type: directory
+    data:
+      - bob_wins_3x3: manual/bob_wins_3x3.in
+      - bob_wins_3x3_2: manual/bob_wins_3x3_2.in
+      - bob_wins_3x3_3: manual/bob_wins_3x3_3.in
+      - jump-outside: manual/jump-outside.in
+      - small-tie: manual/small-tie.in
+      - outside: manual/outside.in
+      - opposite-1: manual/opposite-1.in
+      - opposite-2: manual/opposite-2.in
+
+      - fill-top: fill-top.py 100000
+      - fill-bottom: fill-bottom.py 100000
+      - fill-left: fill-left.py 100000
+      - fill-right: fill-right.py 100000
+      - fill-around: fill-around.py 100000 3571 {seed}
+
+      - random: rand_gen.py 2 {seed}
+      - random: rand_gen.py 3 {seed}
+      - random: rand_gen.py 4 {seed}
+      - random: rand_gen.py 5 {seed}
+      - random: rand_gen.py 6 {seed}
+      - random: rand_gen.py 7 {seed}
+      - random: rand_gen.py 8 {seed}
+      - random: rand_gen.py 9 {seed}
+      - random: rand_gen.py 10 {seed}
+      - random: rand_gen.py 50 {seed}
+
+      - random: gen.cpp 5 -n n -n n yes yes yes yes {seed}
+      - random: gen.cpp 10 -n n -n n yes yes yes outside {seed}
+      - random: gen.cpp 30 -n n -n n yes yes yes no {seed}
+      - random: gen.cpp 83 -n n -n n yes yes outside yes {seed}
+      - random: gen.cpp 99 -n n -n n yes yes outside outside {seed}
+      - random: gen.cpp 137 -n n -n n yes yes outside no {seed}
+      - random: gen.cpp 581 -n n -n n yes yes no yes {seed}
+      - random: gen.cpp 1234 -n n -n n yes yes no outside {seed}
+      - random: gen.cpp 9876 -n n -n n yes yes no no {seed}
+      - random: gen.cpp 20 -n n -n n no yes outside no {seed}
+
+      - random: rand_gen.py 100 {seed}
+      - random: rand_gen.py 400 {seed}
+      - random: rand_gen.py 500 {seed}
+      - random: rand_gen.py 800 {seed}
+      - random: rand_gen.py 1000 {seed}
+      - random: rand_gen.py 2000 {seed}
+      - random: rand_gen.py 3000 {seed}
+      - random: rand_gen.py 4000 {seed}
+      - random: rand_gen.py 5000 {seed}
+      - random: rand_gen.py 8000 {seed}
+      - random: rand_gen.py 10000 {seed}
+      - random: rand_gen.py 20000 {seed}
+      - random: rand_gen.py 30000 {seed}
+      - random: rand_gen.py 50000 {seed}
+      - random: rand_gen.py 70000 {seed}
+      - random: rand_gen.py 80000 {seed}
+      - random: rand_gen.py 90000 {seed}
+      - random: rand_gen.py 100000 {seed:1}
+      - random: rand_gen.py 100000 {seed:2}
+      - random: rand_gen.py 100000 {seed:3}
+      - random: rand_gen.py 100000 {seed:4}
+      - random: rand_gen.py 100000 {seed:5}
+      - random: rand_gen.py 100000 {seed:6}
+
+      - random: gen.cpp 100000 -n n -n n yes yes yes yes {seed}
+      - random: gen.cpp 100000 -n n -n n yes yes yes outside {seed}
+      - random: gen.cpp 100000 -n n -n n yes yes yes no {seed}
+      - random: gen.cpp 100000 -n n -n n yes yes outside yes {seed}
+      - random: gen.cpp 100000 -n n -n n yes yes outside outside {seed}
+      - random: gen.cpp 100000 -n n -n n yes yes outside no {seed}
+      - random: gen.cpp 100000 -n n -n n yes yes no yes {seed}
+      - random: gen.cpp 100000 -n n -n n yes yes no outside {seed}
+      - random: gen.cpp 99999 -n n -n n yes yes no no {seed}
+      - random: gen.cpp 99998 0 n -n n no yes no yes {seed}
+      - random: gen.cpp 20000 -n 0 -n n no yes no outside {seed}
+      - random: gen.cpp 99997 -n n 0 n no yes no no {seed}
+

@@ -1,0 +1,31 @@
+solution: /submissions/accepted/ragnar.py
+#visualizer: /visualizers/asy.sh {name}
+
+data:
+  sample:
+    type: directory
+    solution:
+    data:
+      '1':
+      '2':
+      '3':
+
+  secret:
+    type: directory
+    data:
+      - random: input_validator --generate {seed:1}
+      - random: input_validator --generate {seed:2}
+      - random: input_validator --generate {seed:3}
+      - random: input_validator --generate {seed:4}
+      - random: input_validator --generate {seed:5}
+      - random: input_validator --generate {seed:6}
+      - random: input_validator --generate {seed:7}
+      - random: input_validator --generate {seed:8}
+      - random: input_validator --generate {seed:9}
+      - random: input_validator --generate {seed:10}
+      - max-ans: manual/max-ans.in
+      - min-ans: manual/min-ans.in
+      - just-above-0: manual/just-above-0.in
+      - just-below-0: manual/just-below-0.in
+      - just-above-100: manual/just-above-100.in
+      - just-below-100: manual/just-below-100.in

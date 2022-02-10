@@ -1,0 +1,43 @@
+solution: /submissions/accepted/timon.cpp
+
+# Some 'long-period' cases were found using local search taking a long time, therefore they
+# are included as custom cases. However the generators are included in this directory.
+
+data:
+  secret:
+    type: directory
+    data:
+      - 'long-period-1': long-period-1.in
+      - 'long-period-2': long-period-2.in
+      - 'long-period-tweaked-1': long-period-tweaked-1.in
+      - 'long-period-tweaked-2': long-period-tweaked-2.in
+      - 'long-period-tweaked-3': long-period-tweaked-3.in
+      - 'long-period-tweaked-4': long-period-tweaked-4.in
+      - 'large-1': long-period.cpp 100 100000 8000 90 {seed:1}
+      - 'large-2': long-period.cpp 100 100000 8000 90 {seed:2}
+      - 'large-3': long-period.cpp 100 100000 5000 90 {seed:3}
+      - 'large-4': long-period.cpp 100 100000 8000 50 {seed:4}
+      - 'max-case': max-case.py 100 100000 1000000000 1000000000
+      - 'custom-1': custom-1.py {seed}
+      - min-1: manual/min-1.in
+      - min-2: manual/min-2.in
+      - random: rand.py {name}.in {seed:1}
+      - random: rand.py {name}.in {seed:2}
+      - random: rand.py {name}.in {seed:3}
+      - random: rand.py {name}.in {seed:4}
+      - random: rand.py {name}.in {seed:5}
+      - random: rand.py {name}.in {seed:6}
+      - random: rand.py {name}.in {seed:7}
+      - random: rand.py {name}.in {seed:8}
+      - random: rand.py {name}.in {seed:9}
+      - random: rand.py {name}.in {seed:10}
+      - random: rand.py {name}.in {seed:11}
+      - random: rand.py {name}.in {seed:12}
+      - random: rand.py {name}.in {seed:13}
+      - random: rand.py {name}.in {seed:14}
+      - random: rand.py {name}.in {seed:15}
+      - random: rand.py {name}.in {seed:16}
+      - random: rand.py {name}.in {seed:17}
+      - random: rand.py {name}.in {seed:18}
+      - random: rand.py {name}.in {seed:19}
+      - random: rand.py {name}.in {seed:20}

@@ -1,0 +1,57 @@
+solution: /submissions/accepted/ng.cpp
+
+data:
+  sample:
+    type: directory
+    data:
+      '1': manual/sample-1.in
+      '2': manual/sample-2.in
+
+  secret:
+    type: directory
+    data:
+      - n1: rand.py 1 5 {seed}
+      - n2: rand.py 2 5 {seed}
+      - n3: rand.py 3 5 {seed}
+      - small: rand.py 5 5 {seed}
+      - small: rand.py 33 33 {seed}
+      - small: rand.py 10 33 {seed}
+      - small: rand.py 10 33 543
+      - small: twospeeds.py 10 {seed}
+      - small: twospeeds.py 10 453
+      - kill-n4-a: kill-n4.py 400 2
+      - kill-n4-b: kill-n4.py 400 0
+      - kill-n4-c: kill-n4.py 400 1
+      - kill-n4-heuristic-a: kill-n4-heuristic.py 400 2
+      - kill-n4-heuristic-b: kill-n4-heuristic.py 400 0
+      - kill-n4-heuristic-c: kill-n4-heuristic.py 400 1
+      - random: rand.py 67 67 {seed}
+      - random: rand.py 121 2324 {seed}
+      - random: rand.py 400 1000000 {seed}
+      - random: rand.py 400 1000000 123
+      - random: rand.py 400 1000000 234
+      - random: rand.py 400 5 {seed}
+      - random: rand.py 400 2 {seed}
+      - random: rand.py 400 1 {seed}
+      - random: rand.py 3 1 {seed}
+      - twospeeds: twospeeds.py 50 {seed}
+      - twospeeds: twospeeds.py 50 123
+      - twospeeds: twospeeds.py 400 {seed}
+      - twospeeds: twospeeds.py 400 543
+      - twospeeds: twospeeds.py 400 654
+      - almost-constant: almost-constant.py 400 1 2 748 {seed}
+      - almost-constant: almost-constant.py 400 1 3 996 {seed}
+      - almost-constant: almost-constant.py 400 2 3 100 {seed}
+      - almost-constant: almost-constant.py 400 1 4 1246 {seed}
+      - almost-constant: almost-constant.py 400 1 2 749 {seed}
+      - almost-constant: almost-constant.py 400 2021 4000 998248 {seed}
+      - allsame: manual/allsame.in
+      - randomized: rand.py 1 1 {seed}
+      - randomized: rand.py 2 10 {seed}
+      - randomized: rand.py 1 100 {seed}
+      - randomized: rand.py 3 2 {seed}
+      - randomized: rand.py 2 9 {seed}
+      - randomized: rand.py 103 13 {seed}
+      - randomized: rand.py 48 274 {seed}
+      - randomized: rand.py 23 94 {seed}
+

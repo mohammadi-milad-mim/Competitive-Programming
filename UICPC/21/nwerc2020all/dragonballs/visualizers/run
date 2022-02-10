@@ -1,0 +1,13 @@
+#!/bin/sh
+
+name=$1
+
+if [ ! -f $name.interaction ] ; then
+	echo $name.interaction not found! >&2
+	exit 0
+fi
+
+d=$(dirname $0)
+
+cat $name.in $name.interaction | python3 $d/preprocess.py > processed
+cat processed $name.in | asy $d/visualize.asy -f png -o $name.png

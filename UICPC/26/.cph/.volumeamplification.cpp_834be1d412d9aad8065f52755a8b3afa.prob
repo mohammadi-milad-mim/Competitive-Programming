@@ -1,0 +1,1 @@
+{"name":"Local: volumeamplification","url":"d:\\CP\\Contests\\Officials\\26\\volumeamplification.cpp","tests":[{"id":1637307996866,"input":"2\n3 80\n3 10 8\n3 35\n3 10 8","output":"80\n30"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\Contests\\Officials\\26\\volumeamplification.cpp","group":"local","local":true}
